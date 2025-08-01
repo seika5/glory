@@ -1,0 +1,63 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+.claude/settings.local.json
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+glory-web/node_modules
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+glory-web/.next/
+glory-web/out/
+glory-web/public/sitemap.xml
+
+# vercel
+.vercel
+glory-web/.vercel
+
+# production
+/build
+glory-web/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+glory-web/.env.local
+glory-web/.env.development.local
+glory-web/.env.test.local
+glory-web/.env.production.local
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+glory-web/next-env.d.ts
+
+# api environment
+api-crafting/.env
+
+# ide
+.vscode/
+.idea/
+
+# os
+Thumbs.db
