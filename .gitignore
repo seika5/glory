@@ -8,6 +8,8 @@ CLAUDE.md
 /.pnp
 .pnp.js
 glory-web/node_modules
+glory-web-backend/node_modules
+crafting-api/node_modules
 
 # testing
 /coverage
@@ -18,14 +20,22 @@ glory-web/node_modules
 glory-web/.next/
 glory-web/out/
 glory-web/public/sitemap.xml
+glory-web-backend/.next/
+glory-web-backend/out/
+crafting-api/.next/
+crafting-api/out/
 
 # vercel
 .vercel
 glory-web/.vercel
+glory-web-backend/.vercel
+crafting-api/.vercel
 
 # production
 /build
 glory-web/build
+glory-web-backend/build
+crafting-api/build
 
 # misc
 .DS_Store
@@ -39,22 +49,38 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+glory-web/.env
 glory-web/.env.local
 glory-web/.env.development.local
 glory-web/.env.test.local
 glory-web/.env.production.local
+glory-web-backend/.env
+glory-web-backend/.env.local
+glory-web-backend/.env.development.local
+glory-web-backend/.env.test.local
+glory-web-backend/.env.production.local
+crafting-api/.env
+crafting-api/.env.local
+crafting-api/.env.development.local
+crafting-api/.env.test.local
+crafting-api/.env.production.local
+
+# firebase service account keys
+service-account.json
+glory-web-backend/service-account.json
+crafting-api/service-account.json
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
 glory-web/next-env.d.ts
-
-# api environment
-api-crafting/.env
+glory-web-backend/next-env.d.ts
+crafting-api/next-env.d.ts
 
 # ide
 .vscode/
