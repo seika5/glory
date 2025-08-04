@@ -6,6 +6,7 @@ export default function Home() {
       <ul>
         <li>GET /api/inventory - Get user inventory</li>
         <li>POST /api/add-material - Add random material</li>
+        <li>POST /api/init-user - Initialize user document</li>
         <li>POST /api/craft-request - Process craft request</li>
       </ul>
     </div>
