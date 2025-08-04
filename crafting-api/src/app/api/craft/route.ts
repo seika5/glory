@@ -20,13 +20,23 @@ interface Weapon {
 }
 
 const MOCK_WEAPONS: { [key: string]: Weapon[] } = {
-  bows: [
+  snipers: [
     {
-      name: "Ethereal Moonbow",
-      type: "bow",
-      description: "A bow that gleams with celestial light, arrows fired from it phase through armor.",
-      stats: { attack: 95, speed: 85, magic: 70 },
-      effects: ["Pierces armor", "Moonlight damage over time", "+20% critical chance at night"],
+      name: "Voidscope Eliminator",
+      type: "sniper",
+      description: "A precision rifle that bends spacetime to guarantee perfect shots across impossible distances.",
+      stats: { attack: 150, speed: 45, magic: 85 },
+      effects: ["Ignores distance penalties", "Phase bullets pierce all obstacles", "+50% critical damage on headshots"],
+      rarity: "legendary"
+    }
+  ],
+  shields: [
+    {
+      name: "Aegis of Eternal Defiance",
+      type: "shield",
+      description: "A shield that grows stronger with each blow it deflects, becoming an impenetrable fortress.",
+      stats: { defense: 120, magic: 80, speed: 40 },
+      effects: ["Reflects 25% damage back to attacker", "Damage reduction increases with consecutive blocks", "Generates protective aura for allies"],
       rarity: "legendary"
     }
   ],

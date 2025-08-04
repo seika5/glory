@@ -20,8 +20,8 @@ interface CraftingGridProps {
 }
 
 const WEAPON_TYPES = [
-  'bows', 'cannons', 'daggers', 'gauntlets', 'handguns',
-  'rifles', 'spears', 'staves', 'swords'
+  'cannons', 'daggers', 'gauntlets', 'handguns', 'rifles',
+  'shields', 'snipers', 'spears', 'staves', 'swords'
 ];
 
 export default function CraftingGrid({ inventory, onCraft }: CraftingGridProps) {
@@ -30,7 +30,7 @@ export default function CraftingGrid({ inventory, onCraft }: CraftingGridProps) 
       Array(9).fill(null).map(() => ({ material: null, isEmpty: true }))
     )
   );
-  const [selectedWeaponType, setSelectedWeaponType] = useState<string>('bows');
+  const [selectedWeaponType, setSelectedWeaponType] = useState<string>('cannons');
   const [draggedMaterial, setDraggedMaterial] = useState<Material | null>(null);
   const [usedMaterials, setUsedMaterials] = useState<{ [materialId: string]: number }>({});
 
